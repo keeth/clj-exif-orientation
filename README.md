@@ -6,7 +6,7 @@ A typical use-case is receiving a photo upload from a camera phone, and wanting 
 the image.  Many image processing and display tools ignore the EXIF orientation flag, resulting in an image that looks
 incorrectly rotated.
 
-[![Clojars Project](http://clojars.org/clj-exif-orientation/latest-version.svg)](http://clojars.org/clj-exif-orientation)
+[clj-exif-orientation "0.1.0"]
 
     (require '[clj-exif-orientation.core :as ceo])
     (require '[clj-http.client :as client])
