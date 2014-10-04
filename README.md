@@ -12,7 +12,7 @@ incorrectly rotated.
 
 Add this to your project.clj dependencies:
 
-[clj-exif-orientation "0.1.0"]
+    [clj-exif-orientation "0.1.0"]
 
 ## Example
 
