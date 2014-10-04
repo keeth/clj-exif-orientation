@@ -10,7 +10,7 @@ incorrectly rotated (e.g. a portrait photo is displayed sideways).  This library
 
 ## Install
 
-[![Clojars Project](http://clojars.org/clj-exif-orientation/latest-version.svg)]
+![Clojars Project](http://clojars.org/clj-exif-orientation/latest-version.svg)
 
 Add this to your project.clj dependencies:
 
