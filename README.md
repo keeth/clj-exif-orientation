@@ -27,7 +27,7 @@ Add this to your project.clj dependencies:
 
 **transform-byte-array** takes a byte array of image data and returns a byte array with orientation performed, and EXIF 
 metadata stripped.  If parsing your byte array fails, or if EXIF metadata is missing, or if the image is already in 
-orientation 1, **transform-byte-array* will return the original bytes.
+orientation 1, **transform-byte-array** will return the original bytes.
 
 ## TODO
 
