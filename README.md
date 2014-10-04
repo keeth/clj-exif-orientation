@@ -8,6 +8,20 @@ incorrectly rotated.
 
 [![Clojars Project](http://clojars.org/clj-exif-orientation/latest-version.svg)](http://clojars.org/clj-exif-orientation)
 
+    (require '[clj-exif-orientation.core :as ceo])
+    (require '[clj-http.client :as client])
+
+    (ceo/transform-byte-array
+      (:body 
+        (client/get "https://raw.githubusercontent.com/recurser/exif-orientation-examples/master/Landscape_6.jpg" {:as :byte-array}))
+
+**transform-byte-array** takes a byte array of image data and returns a byte array with orientation performed, and EXIF data stripped.  If parsing your byte array fails, or if EXIF metadata is missing, or if the image is already in orientation 1, **transform-byte-array* will return the original bytes.
+
+## TODO
+
+* more tests with different formats and orientations
+* work with streams/files in addition to byte arrays
+
 ## License
 
 Copyright © 2014 Keith Grennan.
