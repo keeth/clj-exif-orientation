@@ -6,6 +6,8 @@ A typical use-case is receiving a photo upload from a camera phone, and wanting 
 the image.  Many image processing and display tools ignore the EXIF orientation flag, resulting in an image that looks
 incorrectly rotated.
 
+[This article](http://www.daveperrett.com/articles/2012/07/28/exif-orientation-handling-is-a-ghetto/) discusses the problem in more depth.
+
 ## Install
 
 Add this to your project.clj dependencies:
