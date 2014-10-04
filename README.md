@@ -4,7 +4,7 @@ A library for transforming EXIF (typically JPEG) files to regular, top-left orie
 
 A typical use-case is receiving a photo upload from a camera phone, and wanting to resize or otherwise transform
 the image.  Many image processing and display tools ignore the EXIF orientation flag, resulting in an image that looks
-incorrectly rotated.
+incorrectly rotated (e.g. a portrait photo is displayed sideways).  This library performs a rotation of your image, and removes the orientation flag, so that the image can be further processed and/or displayed correctly by software that is not EXIF orientation aware.
 
 [This article](http://www.daveperrett.com/articles/2012/07/28/exif-orientation-handling-is-a-ghetto/) discusses the problem in more depth.
 
@@ -28,7 +28,7 @@ Add this to your project.clj dependencies:
       )
 
 **transform-byte-array** takes a byte array of image data and returns a byte array with orientation performed, and EXIF 
-metadata stripped.  If parsing your byte array fails, or if EXIF metadata is missing, or if the image is already in 
+metadata stripped.  If parsing your byte array fails or EXIF metadata is missing, or if the image is already in 
 orientation 1, **transform-byte-array** will return the original bytes.
 
 ## TODO
