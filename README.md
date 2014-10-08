@@ -47,7 +47,7 @@ Add this to your project.clj dependencies:
 * reads byte array, transforms image data, writes to new byte array
 * returns byte array
 
-Exceptional conditions:
+## Exceptional conditions
 
 If any of the following occur, without-exif will simply pass through the input you gave it, with no modifications:
 
