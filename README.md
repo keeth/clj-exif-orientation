@@ -1,10 +1,10 @@
 # clj-exif-orientation
 
-This library helps you prepare EXIF images (typically JPEGs) for processing by tools that are not EXIF-orientation 
+This library helps you prepare EXIF images (typically JPEGs) for processing by tools that are not EXIF-orientation
 aware.
 
 A typical use-case: your app receives photo uploads from mobile devices, and you want to resize or otherwise transform
-the photos.  Your image processing tools ignore the EXIF orientation flag, resulting in images that sometimes look 
+the photos.  Your image processing tools ignore the EXIF orientation flag, resulting in images that sometimes look
 sideways after processing.
 
 [This article](http://www.daveperrett.com/articles/2012/07/28/exif-orientation-handling-is-a-ghetto/) discusses the problem in more depth.
@@ -20,16 +20,16 @@ The **without-exif** function:
 
 Add this to your project.clj dependencies:
 
-[clj-exif-orientation "0.2.0"]
+[clj-exif-orientation "0.2.1"]
 
 ## Example
 
     (require '[clj-exif-orientation.core :as ceo])
-    
+
     (require '[clojure.java.io :as io])
-        
+
     (ceo/without-exif (io/file "input.jpg") (io/file "output.jpg"))
-    
+
 ## API
 
 **without-exif** input-file output-file
